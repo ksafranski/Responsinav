@@ -1,0 +1,72 @@
+@import url("reset.css");
+
+/* DOCUMENT */
+
+    html { width: 100%; height: 100%; overflow: scroll; font: normal 14px Arial, Helvetica, sans-serif; }
+    body { max-width: 950px; margin: 0 auto; line-height: 170%; padding: 25px; }
+    
+/* GLOBALS */
+
+    a,a:link,a:visited { cursor: pointer; text-decoration: none; color: #0000ff; }
+    a:hover,a:active { text-decoration: underline; }
+    
+    p { margin: 20px 0; }
+
+/* HEADER */
+
+    header { }
+    
+    #logo { display: block; font-size: 36px; }
+    
+    /* Standard Navigation */
+    nav { display: block; float: right; margin: -15px -12px 0 0; }
+        nav a.mobile_handle { display: none; }
+        nav ul { display: block; }
+        nav ul li { display: inline; position: relative; float: left; list-style: none; }
+          nav ul a, nav ul a:link, nav ul a:visited { display: block; float: left; padding: 2px 12px 4px 12px; margin: 0; line-height: 10px; color: #000; }
+          nav ul a:hover, nav ul a:active { text-decoration: underline; }
+        /* Sub-Nav */
+        nav ul ul { display: none; position: absolute; top: 18px; left: 7px; width: 120px; padding: 5px; background-color: #000; background-color: rgba(0, 0, 0, .7); }
+          nav ul ul li { display: block; float: none; clear: both; }
+          nav ul ul a, nav ul ul a:link, nav ul ul a:visited { display: block; float: none; border: 0; padding: 8px 5px; margin: 0; color: #fff; }
+          nav ul ul a:hover, nav ul ul a:active { text-decoration: underline; }
+          
+              /* Third-Level */
+                nav ul ul ul { top: 0; left: 125px; }
+
+/* CONTENT */
+
+    #main { margin: 35px 0; }
+
+/* FOOTER */
+
+    footer { color: #666; }
+    
+/* MEDIA QUERY */
+
+    @media (max-width: 650px){
+        
+        body { margin-top: 40px; font-size: 18px; } /* Nudge margin-top to leave room for handle */
+        
+        nav { position: fixed; float: none; margin: 0; padding: 0; top: 0; left: 0; width: 100%; }
+        
+        nav a.mobile_handle { display: block; padding: 10px; background: #a8acbf; text-align: center; }
+        
+        nav ul { display: none; }
+        nav ul li { display: block; position: relative; float: none; padding: 0; background: #ccc; border-top: 1px solid #999; }
+        nav ul a, nav ul a:link, nav ul a:visited { display: block; position: relative; float: none; padding: 15px 10px; clear: both; }
+            
+        /* Second Level */
+        
+        nav ul ul { display: none; position: relative; width: 100%; top: 0; left: 0; margin: 0; padding: 0; background: none; border-bottom: 2px solid #999; }
+            nav ul ul a, nav ul ul a:link, nav ul ul a:visited { color: #000; padding: 15px 10px 15px 25px; }
+            
+        /* Third level */
+        nav ul ul ul { top: 0; left: 0; }
+            nav ul ul ul a, nav ul ul ul a:link, nav ul ul ul a:visited { padding: 15px 10px 15px 45px; }
+            
+        nav .sub_nav { position: absolute; right: 0; top: 0; width: 10%; padding: 15px 20px; margin: 0; cursor: pointer; }
+        nav .arrow_up { float: right; width: 0; height: 0; padding: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 10px solid #000; }
+        nav .arrow_down { float: right; width: 0; height: 0; padding: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #000; }
+    
+    }

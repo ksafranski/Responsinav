@@ -1,0 +1,81 @@
+<!doctype html>
+
+<!--[if lte IE 8 ]><html lang="en" class="ie"><![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Responsive Navigation</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/screen.css">
+</head>
+
+<body>
+
+    <header>
+    
+        <a id="logo">Logo / Title Here</a>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a>
+                    <ul>
+                        <li><a href="#">Our Mission</a></li>
+                        <li><a href="#">General Info</a></li>
+                        <li><a href="#">History</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a>
+                    <ul>
+                        <li><a href="#">Locations</a>
+                            <ul>
+                                <li><a href="#">United States</a></li>
+                                <li><a href="#">England</a></li>
+                                <li><a href="#">China</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Employment</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- #main -->
+    <div id="main">
+
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus, at posuere neque. Sed pharetra nibh eget orci convallis at posuere leo convallis. Sed blandit augue vitae augue scelerisque bibendum. Vivamus sit amet libero turpis, non venenatis urna. In blandit, odio convallis suscipit venenatis, ante ipsum cursus augue.
+        </p>
+        <p>
+        Et mollis nunc diam eget sapien. Nulla facilisi. Etiam feugiat imperdiet rhoncus. Sed suscipit bibendum enim, sed volutpat tortor malesuada non. Morbi fringilla dui non purus porttitor mattis. Suspendisse quis vulputate risus. Phasellus erat velit, sagittis sed varius volutpat, placerat nec urna. Nam eu metus vitae dolor fringilla feugiat. Nulla.
+        </p>
+        <p>
+        Facilisi. Etiam enim metus, luctus in adipiscing at, consectetur quis sapien. Duis imperdiet egestas ligula, quis hendrerit ipsum ullamcorper et. Phasellus id tristique orci. Proin consequat mi at felis scelerisque ullamcorper. Etiam tempus, felis vel eleifend porta, velit nunc mattis urna, at ullamcorper erat diam dignissim ante. Pellentesque justo risus.
+        </p>
+
+    </div>
+    <!-- #main -->
+
+    
+    <footer>
+    <p>Footer content goes here...</p>
+    </footer>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery-1.6.2.min.js"%3E%3C/script%3E'));</script>
+
+<!-- Default Scripts -->
+<script src="js/jquery.responsinav.js"></script>
+<script>
+$(function(){
+    $(window).responsinav({ breakpoint: 650 });
+});
+</script>
+
+</body>
+</html>
