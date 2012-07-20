@@ -23,6 +23,8 @@
             }
         });
         
+        curz = 99;
+        
         nav = {
         
             reset : function(){ 
